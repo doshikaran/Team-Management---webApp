@@ -39,8 +39,8 @@ function AddProject() {
 
   const onAdd = (error) => {
     error.preventDefault();
-    if (name === "" || subject === "" || desc === "" || status === "") {
-      // return alert("Please enter everything");
+    if (name === "" || subject === "" || desc === "" || memberId === "" || status === "") {
+      return alert("Please enter everything");
     }
     addNewProject(name, subject, status, memberId, desc);
 
@@ -76,6 +76,55 @@ function AddProject() {
                   add a new project
                 </h3>
                 <form onClick={onAdd} className="space-y-6">
+                  {/* status */}
+                  <div>
+                    <Box sx={{ minWidth: 200 }}>
+                      <label
+                        for="name"
+                        className="block uppercase mb-2 text-xs font-medium text-gray-900 "
+                      >
+                        Enter the status
+                      </label>
+                      <Select
+                        labelId="demo-simple-select-label"
+                        id="status"
+                        value={status}
+                        label="Age"
+                        sx={{ minWidth: "100%" }}
+                        onChange={(e) => setStatus(e.target.value)}
+                      >
+                        <MenuItem value="new">To Do</MenuItem>
+                        <MenuItem value="progress">In Progress</MenuItem>
+                        <MenuItem value="done">Completed</MenuItem>
+                      </Select>
+                    </Box>
+                  </div>
+                  {/* member */}
+                  <div>
+                    <Box sx={{ minWidth: 200 }}>
+                      <label
+                        for="name"
+                        className="block uppercase mb-2 text-xs font-medium text-gray-900 "
+                      >
+                        Enter the member id
+                      </label>
+                      <Select
+                        labelId="demo-simple-select-label"
+                        id="memberid"
+                        value={memberId}
+                        label="Age"
+                        sx={{ minWidth: "100%" }}
+                        onChange={(e) => setMemberId(e.target.value)}
+                      >
+                        {/* <MenuItem value=""></MenuItem> */}
+                        {data.members.map((member) => (
+                          <MenuItem key={member.id} value={member.id}>
+                            {member.name}
+                          </MenuItem>
+                        ))}
+                      </Select>
+                    </Box>
+                  </div>
                   {/* name */}
                   <div>
                     <label
@@ -130,56 +179,6 @@ function AddProject() {
                       placeholder=""
                       required
                     />
-                  </div>
-                  {/* member */}
-                  <div>
-                    <Box sx={{ minWidth: 200 }}>
-                      <label
-                        for="name"
-                        className="block uppercase mb-2 text-xs font-medium text-gray-900 "
-                      >
-                        Enter the member id
-                      </label>
-                      <Select
-                        labelId="demo-simple-select-label"
-                        id="memberid"
-                        value={memberId}
-                        label="Age"
-                        sx={{ minWidth: "100%" }}
-                        onChange={(e) => setMemberId(e.target.value)}
-                      >
-                        <MenuItem value=""></MenuItem>
-                        {data.members.map((member) => (
-                          <MenuItem key={member.id} value={member.id}>
-                            {member.name}
-                          </MenuItem>
-                        ))}
-                      </Select>
-                    </Box>
-                  </div>
-
-                  {/* status */}
-                  <div>
-                    <Box sx={{ minWidth: 200 }}>
-                      <label
-                        for="name"
-                        className="block uppercase mb-2 text-xs font-medium text-gray-900 "
-                      >
-                        Enter the status
-                      </label>
-                      <Select
-                        labelId="demo-simple-select-label"
-                        id="status"
-                        value={status}
-                        label="Age"
-                        sx={{ minWidth: "100%" }}
-                        onChange={(e) => setStatus(e.target.value)}
-                      >
-                        <MenuItem value="new">To Do</MenuItem>
-                        <MenuItem value="progress">In Progess</MenuItem>
-                        <MenuItem value="done">Completed</MenuItem>
-                      </Select>
-                    </Box>
                   </div>
                   <button
                     // onSubmit={handleClose}
