@@ -1,3 +1,8 @@
+# Technology / Framework used
+React , Tailwind CSS , Node.js , Express.js , GraphQL , MongoDB
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
