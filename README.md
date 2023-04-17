@@ -1,7 +1,7 @@
 # Technology / Framework used
 React , Tailwind CSS , Node.js , Express.js , GraphQL , MongoDB
 
-## Available Scripts
+## Demo Link
 For demo video please click on 
 https://drive.google.com/file/d/1MXPbdlk3A-O1i7catwRouj3Ant7SBqY3/view?usp=share_link
 
