@@ -1,79 +1,50 @@
-# Technology / Framework used
-React , Tailwind CSS , Node.js , Express.js , GraphQL , MongoDB
+# Team Management Application
 
-## Demo Link
-For demo video please click on 
-https://drive.google.com/file/d/1MXPbdlk3A-O1i7catwRouj3Ant7SBqY3/view?usp=share_link
+A team management application built using React, Tailwind CSS, Node.js, Express.js, GraphQL, and MongoDB. The application aims to optimize collaboration and workflow within a team project. As the team leader, you can create project teams and add team members. Each team member can add their work tasks and update the status of their tasks. All data is stored and managed in MongoDB.
 
+## Demo
 
+A demo of the working application can be accessed [here](https://drive.google.com/file/d/1MXPbdlk3A-O1i7catwRouj3Ant7SBqY3/view?usp=share_link).
 
-# Getting Started with Create React App
+## Features
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- **Team Creation:** The team leader can create project teams and add team members.
+- **Task Management:** Each team member can add their work tasks, including task details and deadlines.
+- **Task Status Updates:** Team members can update the status of their tasks, such as "In Progress," "Completed," or "Pending."
+- **Collaboration:** Team members can communicate and collaborate within the application to discuss tasks and projects.
+- **Data Storage:** All team and task data is stored in a MongoDB database, ensuring persistent storage and easy retrieval.
 
-## Available Scripts
+## Technologies Used
 
-In the project directory, you can run:
+- **React:** A popular JavaScript library for building user interfaces.
+- **Tailwind CSS:** A utility-first CSS framework for creating responsive and customizable designs.
+- **Node.js:** A runtime environment for executing JavaScript code on the server-side.
+- **Express.js:** A web application framework for building robust and scalable server-side applications.
+- **GraphQL:** A query language for APIs that provides a flexible and efficient approach to data fetching and manipulation.
+- **MongoDB:** A NoSQL database for storing and managing data in a flexible and scalable manner.
 
-### `npm start`
+## Getting Started
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+To run the team management application locally, follow these steps:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/team-management-app.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd team-management-app
+   ```
+3. Install the dependencies:
+   ```bash
+   npm install
+   ```
+4. Start the development server:
+   ```bash
+   npm start
+   ```
+5. Open your browser and visit `http://localhost:3000` to see the application running locally.
 
-### `npm test`
+## About
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This team management application was developed as a tool to enhance collaboration and task management within team projects. By utilizing technologies such as React, Tailwind CSS, Node.js, Express.js, GraphQL, and MongoDB, the application provides a user-friendly and efficient solution for team leaders and members to streamline their workflow and improve productivity.
