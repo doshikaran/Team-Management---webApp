@@ -23,27 +23,7 @@ A demo of the working application can be accessed [here](https://drive.google.co
 - **GraphQL:** A query language for APIs that provides a flexible and efficient approach to data fetching and manipulation.
 - **MongoDB:** A NoSQL database for storing and managing data in a flexible and scalable manner.
 
-## Getting Started
 
-To run the team management application locally, follow these steps:
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/team-management-app.git
-   ```
-2. Navigate to the project directory:
-   ```bash
-   cd team-management-app
-   ```
-3. Install the dependencies:
-   ```bash
-   npm install
-   ```
-4. Start the development server:
-   ```bash
-   npm start
-   ```
-5. Open your browser and visit `http://localhost:3000` to see the application running locally.
 
 ## About
 
